@@ -28,3 +28,33 @@ Here are some sketches that show my ideas directly.
 04-06 show the movement without interaction.
 
 
+## Progress
+This week, I created an animation of cat eyes that follow a circular motion.
+- catImg: An image object representing a cat image loaded from an asset.
+- eyeLeft and eyeRight: Objects of the CatEye class, representing the left and right eyes of the cat.
+- The animation of the cat's eyes and the circular motion of the logo are driven by the draw function. The logo's motion is time-based as logoA is decremented in each frame, simulating the logo's rotation.
+- CatEye (Class): A class representing the eyes of the cat. The move method updates the eye's position based on the current logoA angle, making it appear as if the cat's eyes are tracking the logo's motion.
+
+## Description(what I will do next)
+I will add mouse move/clicked functions and make logo changes next week.
+1. **Classes, Objects, and Arrays:**
+- logos: An array that holds multiple logo images loaded from assets.
+- logoIndex: An integer representing the index of the current logo image to be displayed.
+- logoX and logoY: Variables representing the current position of the logo image on the canvas.
+- changeNum: An integer used to keep track of changes in logo motion.
+2. **Interactivity and Time-Based Logic:**
+- The mouseClicked function changes the current logo image when the mouse is clicked.
+- The timer variable introduces a delay, allowing the animation to pause temporarily when the mouse moves.
+3. **Functions:**
+- preload(): Loads resources (logo images and cat image).
+- setup(): Initializes the canvas, resizes the cat image, and sets up initial values for various parameters.
+- draw(): for rendering the animation, updating the logo's position, and drawing the cat's eyes.
+- mouseClicked(): Change the logo image when the mouse is clicked.
+- changeLogo(): A function that increments the logoIndex to change the logo image.
+- moveWithMouse(): A function that adjusts the logo's position based on the mouse's movement, creating a springing effect.
+
+There may be some elements/funtions missing, it will be figured out when I write the code for the mouse and logo part next week.
+
+
+
+
